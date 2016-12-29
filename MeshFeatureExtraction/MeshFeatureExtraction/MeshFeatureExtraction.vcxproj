@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2A88CA16-26AE-402A-92CC-82865A411792}</ProjectGuid>
+    <RootNamespace>MeshFeatureExtraction</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DijkstraForGeodesics.cpp" />
+    <ClCompile Include="..\..\FeatureExporter.cpp" />
+    <ClCompile Include="..\..\JointBoost.cpp" />
+    <ClCompile Include="..\..\JointBoost2.cpp" />
+    <ClCompile Include="..\..\MeshSegmentationFeatures.cpp" />
+    <ClCompile Include="..\..\Trimesh2\diffuse.cc" />
+    <ClCompile Include="..\..\Trimesh2\edgeflip.cc" />
+    <ClCompile Include="..\..\Trimesh2\faceflip.cc" />
+    <ClCompile Include="..\..\Trimesh2\filter.cc" />
+    <ClCompile Include="..\..\Trimesh2\ICP.cc" />
+    <ClCompile Include="..\..\Trimesh2\KDtree.cc" />
+    <ClCompile Include="..\..\Trimesh2\lmsmooth.cc" />
+    <ClCompile Include="..\..\Trimesh2\remove.cc" />
+    <ClCompile Include="..\..\Trimesh2\reorder_verts.cc" />
+    <ClCompile Include="..\..\Trimesh2\subdiv.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_bounding.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_connectivity.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_curvature.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_grid.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_io.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_normals.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_pointareas.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_stats.cc" />
+    <ClCompile Include="..\..\Trimesh2\TriMesh_tstrips.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\blaswrap.h" />
+    <ClInclude Include="..\..\clapack.h" />
+    <ClInclude Include="..\..\DijkstraForGeodesics.h" />
+    <ClInclude Include="..\..\f2c.h" />
+    <ClInclude Include="..\..\JointBoost.h" />
+    <ClInclude Include="..\..\MeshSegmentationFeatures.h" />
+    <ClInclude Include="..\..\Trimesh2\bsphere.h" />
+    <ClInclude Include="..\..\Trimesh2\Color.h" />
+    <ClInclude Include="..\..\Trimesh2\GLCamera.h" />
+    <ClInclude Include="..\..\Trimesh2\glui.h" />
+    <ClInclude Include="..\..\Trimesh2\ICP.h" />
+    <ClInclude Include="..\..\Trimesh2\KDtree.h" />
+    <ClInclude Include="..\..\Trimesh2\lineqn.h" />
+    <ClInclude Include="..\..\Trimesh2\mempool.h" />
+    <ClInclude Include="..\..\Trimesh2\noise3d.h" />
+    <ClInclude Include="..\..\Trimesh2\timestamp.h" />
+    <ClInclude Include="..\..\Trimesh2\TriMesh.h" />
+    <ClInclude Include="..\..\Trimesh2\TriMesh_algo.h" />
+    <ClInclude Include="..\..\Trimesh2\Vec.h" />
+    <ClInclude Include="..\..\Trimesh2\XForm.h" />
+    <ClInclude Include="..\..\waPCA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\COPYING" />
+    <None Include="..\..\README.md" />
+    <None Include="..\..\Trimesh2\COPYING" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

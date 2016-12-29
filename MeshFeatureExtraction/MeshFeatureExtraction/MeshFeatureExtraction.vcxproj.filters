@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Trimesh2">
+      <UniqueIdentifier>{2901c36b-0733-488f-8c6c-19e4180e7576}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Trimesh2\edgeflip.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\faceflip.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\filter.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\ICP.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\KDtree.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\lmsmooth.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\remove.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\reorder_verts.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\subdiv.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_bounding.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_connectivity.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_curvature.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_grid.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_io.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_normals.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_pointareas.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_stats.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\TriMesh_tstrips.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Trimesh2\diffuse.cc">
+      <Filter>Trimesh2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\MeshSegmentationFeatures.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DijkstraForGeodesics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\FeatureExporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JointBoost.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\JointBoost2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Trimesh2\GLCamera.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\glui.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\ICP.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\KDtree.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\lineqn.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\mempool.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\noise3d.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\timestamp.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\TriMesh.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\TriMesh_algo.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\Vec.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\XForm.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\bsphere.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Trimesh2\Color.h">
+      <Filter>Trimesh2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DijkstraForGeodesics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\f2c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\JointBoost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\MeshSegmentationFeatures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\waPCA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\blaswrap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\clapack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Trimesh2\COPYING">
+      <Filter>Trimesh2</Filter>
+    </None>
+    <None Include="..\..\COPYING">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\..\README.md">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
